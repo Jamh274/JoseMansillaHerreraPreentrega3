@@ -7,26 +7,25 @@
 
     <!--CSS Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    
+
     <!--favicon-->
-    <link rel="shortcut icon" href="img/icono2.jpg">
-   
+    <link rel="shortcut icon" href="../img/icono2.jpg">
+    
     <!--link a css-->
-    <link rel="stylesheet" href="css/styles.css">
-
+    <link rel="stylesheet" href="../css/styles.css">
+    
     <!--titulo de mi pagina-->
-    <title>FC Barcelona</title>
-
+    <title>Contactanos</title>
 </head>
 
 <body class="b-color">
-
+    
     <!--Navegador-->
     <nav class="navbar navbar-expand-lg">
 
         <!--Nav Contenedor-->
         <div class="container-fluid">
-          <a class="navbar-brand text-light" href="">Inicio</a>
+          <a class="navbar-brand text-light" href="../index.html">Inicio</a>
 
           <!--Hamburguer Buttons-->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,24 +37,24 @@
             <ul class="navbar-nav">
 
               <li class="nav-item">
-                <a class="nav-link active text-light" aria-current="page" href="pages/jugadores.html">Jugadores Destacados</a>
+                <a class="nav-link active text-light" aria-current="page" href="jugadores.html">Jugadores Destacados</a>
               </li>
 
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Torneos</a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="pages/liga.html">Liga Española de Futbol</a></li>
-                  <li><a class="dropdown-item" href="pages/uefa.html">Uefa Champions League</a></li>
-                  <li><a class="dropdown-item" href="pages/copa.html">Copa del Rey</a></li>
+                  <li><a class="dropdown-item" href="liga.html">Liga Española de Futbol</a></li>
+                  <li><a class="dropdown-item" href="uefa.html">Uefa Champions League</a></li>
+                  <li><a class="dropdown-item" href="copa.html">Copa del Rey</a></li>
                 </ul>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link text-light" href="pages/tienda.html">Tienda</a>
+                <a class="nav-link text-light" href="tienda.html">Tienda</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link text-light" href="pages/contacto.html">Contacto</a>
+                <a class="nav-link text-light" href="">Contacto</a>
               </li>
 
             </ul>
@@ -63,71 +62,61 @@
         </div>
       </nav>
 
-
-    <!--Index Header-->
+    <!--Header-->
     <header class="text-white b-header header-e">
-    
-        <h1>FC Barcelona</h1>
-
+        <h1>Ubicacion y Contacto</h1>
     </header>
 
-    <!--Main-->
-    <main class="grid-i">
-        
+    <main>
 
-        <div class="a bordes m-3 d-flex justify-content-center align-items-center">
-            <p class="texto-i">El Fútbol Club Barcelona conocido popularmente como Barça, es una entidad polideportiva con sede en Barcelona, España. Fue fundado como club de fútbol el 29 de noviembre de 1899 y registrado oficialmente el 5 de enero de 1903.</p>
-        </div>
+        <div class="ubicacion grid-c">
 
-        <div class="b pos-img">
-            <img src="img/plantilla.jpeg" alt="plantilla-barcelona">
-        </div>
-
-        <div class="c pos-img">
-            <img src="img/camp.jpg" alt="camp-nou">
-        </div>
-
-        <!--Palmares-->
-        <div class="d text-white ">
-            <h2 class="text-center">Palmares</h2>
-
-            <div class="d-flex justify-content-center align-items-center">
-
-                <ul>
-                    <li>5 Copas de Europa</li>
-                    <li>3 Mundiales de Clubes</li>
-                    <li>4 Recopas de Europa</li>
-                    <li>3 Copas de Ferias</li>
-                    <li>5 Supercopas de Europa</li>
-                    <li>2 Copas Latinas</li>
-                    <li>4 Copas de los Pirineos</li>
-                    <li>26 Ligas</li>
-                    <li>31 Copas del Rey</li>
-                </ul>
+            <!--Formulario-->
+            <div class="formulario g">
+                
+                <p class="text-center">Si deseas mas informacion sobre nuestros productos y servicios, dejanos tus datos.</p>
     
-                <ul>
-                    <li>13 Supercopas de España</li>
-                    <li>2 Copas de la Liga</li>
-                    <li>1 Liga Mediterranea</li>
-                    <li>1 Liga Catalana</li>
-                    <li>23 Campeonatos de Cataluña</li>
-                    <li>2 Supercopas de Cataluña</li>
-                    <li>8 Copas Cataluña</li>
-                    <li>3 Copas Eva Duarte</li>
-                </ul>
+                <div class="d-flex flex-column align-items-end">
+    
+                    <form class="p-1">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre" />
+                    </form>
+                    <form class="p-1">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" name="apellido" />
+                    </form>
+                    <form class="p-1">
+                        <label for="correo">Correo:</label>
+                        <input type="text" name="correo" />
+                    </form>
+                    <form class="p-1">
+                        <label for="telefono">Telefono:</label>
+                        <input type="text" name="telefono" />
+                    </form>
+                    
+    
+                </div>
+                
+                <form class="p-1">
+                    <input type="button" value="Enviar">
+                </form>
+    
             </div>
-        </div>
-        
-        <div class="e pos-img">
-            <img src="img/vitrina1.jpg" alt="trofeos-1">
-        </div>
-
-        <div class="f pos-img">
-            <img src="img/vitrina2.jpg" alt="trofeos-2">
-        </div>
+    
+            <!--Google Maps-->
+            <div class="p-2 mapa h">
+                <p class="text-white p-2">Puedes visitarnos en nuestro local de lunes a sabado, desde las 8:00 hasta las 17:00.</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.6911110162923!2d2.1207062009395314!3d41.3807952952932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a498f576297baf%3A0x44f65330fe1b04b9!2sSpotify%20Camp%20Nou!5e0!3m2!1ses!2sar!4v1663030867590!5m2!1ses!2sar" width="310" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
             
+    
+        </div>
 
     </main>
+
+    
+
     
     <!--Pie de Pagina-->
     <footer>
@@ -171,7 +160,6 @@
             </ul>
         </div>
     </footer>
-
 
     <!--JS Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>

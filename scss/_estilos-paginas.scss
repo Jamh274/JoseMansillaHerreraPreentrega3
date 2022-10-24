@@ -1,0 +1,119 @@
+/*Estilos Index*/
+
+.texto-i {
+    text-align: justify;
+    max-width: 400px;
+    color: $color-fondo;
+}
+
+.tamaño-p {
+    max-width: 450px;
+}
+
+.pos-img{
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bordes {
+    border: solid .1em white;
+}
+
+/*Estilos Jugadores*/
+
+.texto-jugadores {
+    text-align: justify;
+    max-width: 300px;
+}
+
+/*Estilos Tienda*/
+
+.articulos-tienda{
+    max-width: 400px;
+}
+
+.img{
+    max-width: $ancho-max;
+}
+
+.header-t{ 
+    padding-top: .5em;
+    padding-bottom: .5em;
+    text-align: center;
+    border: solid;
+}
+
+/*Estilos Liga*/
+
+.texto-liga{
+    max-width: 600px;
+    text-align: justify;
+}
+
+main {
+    div {
+        table {
+            tr {
+                td{
+                    color: white;
+                }
+            }
+        }
+    }
+}    
+
+main {
+    div {
+        table {
+            tr {
+                th{
+                    color: white;
+                }
+            }
+        }
+    }
+}    
+
+/*Estilos Copa*/
+
+.texto-copa{
+    max-width: 600px;
+    text-align: justify;
+}
+
+/*Estilos Contacto*/
+
+.ubicacion{
+    margin: 1em;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.formulario{
+    padding: 8px;
+    background-color: $color-fondo;
+    max-width: $ancho-max;
+    
+    display: flex;
+    flex-direction: column;
+    border: solid;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.mapa{
+    padding: 8px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
