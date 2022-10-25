@@ -1,22 +1,29 @@
+//Mixin
+
+@mixin flex ($display, $direction, $justify, $align) {
+    display: $display;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
 /*Estilos Index*/
 
 .texto-i {
     text-align: justify;
-    max-width: 400px;
+    max-width: $ancho-max+90;
     color: $color-fondo;
 }
 
 .tamaño-p {
-    max-width: 450px;
+    max-width: $ancho-max+140;
 }
 
 .pos-img{
     padding-top: 1em;
     padding-bottom: 1em;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(flex, row, center, center);
 }
 
 .bordes {
@@ -27,13 +34,13 @@
 
 .texto-jugadores {
     text-align: justify;
-    max-width: 300px;
+    max-width: ($ancho-max)-10;
 }
 
 /*Estilos Tienda*/
 
 .articulos-tienda{
-    max-width: 400px;
+    max-width: $ancho-max+90;
 }
 
 .img{
@@ -50,7 +57,7 @@
 /*Estilos Liga*/
 
 .texto-liga{
-    max-width: 600px;
+    max-width: $ancho-max+290;
     text-align: justify;
 }
 
@@ -81,7 +88,7 @@ main {
 /*Estilos Copa*/
 
 .texto-copa{
-    max-width: 600px;
+    max-width: $ancho-max+290;
     text-align: justify;
 }
 
@@ -89,31 +96,21 @@ main {
 
 .ubicacion{
     margin: 1em;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.formulario{
-    padding: 8px;
-    background-color: $color-fondo;
-    max-width: $ancho-max;
-    
-    display: flex;
-    flex-direction: column;
-    border: solid;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
+    @include flex(flex, row, center, space-around);
 }
 
 .mapa{
     padding: 8px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex(flex, column, center, center);
+}
+
+.formulario{
+
+    @extend .mapa;
+    background-color: $color-fondo;
+    max-width: $ancho-max;
+    
+    border: solid;
+    font-weight: bold;
 }

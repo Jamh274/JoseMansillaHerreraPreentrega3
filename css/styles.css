@@ -46,6 +46,7 @@ nav {
   padding-top: 1em;
   padding-bottom: 1em;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center; }
 
@@ -91,26 +92,21 @@ main div table tr th {
   margin: 1em;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-around; }
-
-.formulario {
-  padding: 8px;
-  background-color: white;
-  max-width: 310px;
-  display: flex;
-  flex-direction: column;
-  border: solid;
   justify-content: center;
-  align-items: center;
-  font-weight: bold; }
+  align-items: space-around; }
 
-.mapa {
+.mapa, .formulario {
   padding: 8px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+
+.formulario {
+  background-color: white;
+  max-width: 310px;
+  border: solid;
+  font-weight: bold; }
 
 /*Grid Index*/
 .grid-i {
